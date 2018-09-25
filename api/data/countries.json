@@ -1,0 +1,16 @@
+[
+    {
+        "name":"Polska",
+        "prefix":"+48",
+        "a2":"NG",
+        "a3":"NGA",
+        "code":"566"
+      },
+      {
+        "name":"Germany",
+        "prefix":"+49",
+        "a2":"NG",
+        "a3":"NGA",
+        "code":"566"
+      }
+]
