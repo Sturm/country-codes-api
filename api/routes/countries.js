@@ -3,9 +3,7 @@ const router = express.Router();
 const countries = require('../data/countries.json');
 
 router.get('/', (req, res, next) => {
-    res.status(200).json({
-        message: 'Handling GET requests to /countries'
-    });
+    res.status(200).json(countries);
 });
 
 router.get('/:countryName', (req, res, next) => {
