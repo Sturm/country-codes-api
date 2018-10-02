@@ -26,6 +26,16 @@ GET /countries/
 List information about specific country.
 ```
 GET /countries/:countryName
+GET /countries/:countryCode
+GET /countries/:countryAlpha2
+GET /countries/:countryAlpha3
+```
+Example values for above commands:
+```
+Poland
+616
+PL
+POL
 ```
 
 ## Author:
