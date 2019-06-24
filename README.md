@@ -1,22 +1,23 @@
 # Country Codes API
 API containing information about countries. This project is still in progress so be prepared for many issues.
-**JSON with country codes is incomplete.**
+
+**JSON with country codes is still incomplete!**
 ## Why this API?
 * This API is using ISO-3166-1 standard so information will be standarized and commonly accepted.
 * Country list is ordered by country prefix codes, so the list is perfect for html select tags.
+## How to build?
+```
+# Install:
+git clone https://github.com/Sturmpl/country-codes-api.git
+cd country-codes-api
+npm install
 
-## TODO
-* Alpha-2 & 3 codes
-* Capitals
-* Advanced sorting
-* Include already prepared inputs
+# Build files:
+tsc
 
-## Made using:
-* [node.js](https://nodejs.org/en/)
-* [Express](http://expressjs.com//)
-
-## Demo:
-Coming soon...
+# Run:
+node dist/server.js
+```
 
 ## How to use:
 List every country.
@@ -44,6 +45,19 @@ Output:
 "code": "276"
 }
 ```
+
+## TODO
+* Alpha-2 & 3 codes
+* Capitals
+* Advanced sorting
+* Include already prepared inputs
+
+## Made using:
+* [node.js](https://nodejs.org/en/)
+* [Express](http://expressjs.com//)
+
+## Demo:
+Coming soon...
 
 ## Author:
 
