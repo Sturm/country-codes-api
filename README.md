@@ -1,6 +1,6 @@
 # Country Codes API
 API containing information about countries. This project is still in progress so be prepared for many issues.
-
+**JSON with country codes is incomplete.**
 ## Why this API?
 * This API is using ISO-3166-1 standard so information will be standarized and commonly accepted.
 * Country list is ordered by country prefix codes, so the list is perfect for html select tags.
@@ -9,7 +9,7 @@ API containing information about countries. This project is still in progress so
 * Alpha-2 & 3 codes
 * Capitals
 * Advanced sorting
-* Include inputs
+* Include already prepared inputs
 
 ## Made using:
 * [node.js](https://nodejs.org/en/)
@@ -30,12 +30,19 @@ GET /countries/:countryCode
 GET /countries/:countryAlpha2
 GET /countries/:countryAlpha3
 ```
-Example values for above commands:
+Example input:
 ```
-Poland
-616
-PL
-POL
+GET /countries/Germany
+```
+Output:
+```
+{
+"name": "Germany",
+"prefix": "+49",
+"alpha-2": "DE",
+"alpha-3": "DEU",
+"code": "276"
+}
 ```
 
 ## Author:
