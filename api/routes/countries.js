@@ -2,28 +2,30 @@ const express = require('express');
 const router = express.Router();
 const countries = require('../data/countries.json');
 
-router.get('/', (req, res, next) => {
+router.get('/', (req, res) => {
     res.status(200).json(countries);
 });
 
-router.get('/:countryName', (req, res, next) => {
-    let countryName = req.params.countryName;
+router.get('/:countryParam', (req, res) => {
+    let countryParam = req.params.countryParam;
 
-    for (var i = 0; i < countries.length; i++) {
-        countryName = countryName.charAt(0).toUpperCase() + countryName.slice(1);
-        if (countries[i]['name'] == countryName) {
+    for (let i = 0; i < countries.length; i++) {
+        if (countries[i]['name'] == countryParam) {
             res.status(200).json(countries[i]);
         }
-        countryName = countryName.toUpperCase();
-        if (countryName.length == 3) {
-            if (countries[i]['alpha-3'] == countryName) {
-                res.status(200).json(countries[i]);
-            }
-        }
-        if (countries[i]['code'] == countryName) {
+        if (countries[i]['prefix'] == countryParam) {
             res.status(200).json(countries[i]);
         }
-        if (countries[i]['alpha-2'] == countryName) {
+        if (countries[i]['prefix'] == "+" + countryParam) {
+            res.status(200).json(countries[i]);
+        }
+        if (countries[i]['alpha-2'] == countryParam) {
+            res.status(200).json(countries[i]);
+        }
+        if (countries[i]['alpha-3'] == countryParam) {
+            res.status(200).json(countries[i]);
+        }
+        if (countries[i]['code'] == countryParam) {
             res.status(200).json(countries[i]);
         }
     }
