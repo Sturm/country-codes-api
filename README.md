@@ -22,18 +22,18 @@ node dist/server.js
 ## How to use:
 List every country.
 ```
-GET /countries/
+GET /country/
 ```
 List information about specific country.
 ```
-GET /countries/:countryName
-GET /countries/:countryCode
-GET /countries/:countryAlpha2
-GET /countries/:countryAlpha3
+GET /country/:countryName
+GET /country/:countryCode
+GET /country/:countryAlpha2
+GET /country/:countryAlpha3
 ```
 Example input:
 ```
-GET /countries/Germany
+GET /country/Germany
 ```
 Output:
 ```

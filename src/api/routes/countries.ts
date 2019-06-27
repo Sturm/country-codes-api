@@ -7,8 +7,8 @@ router.get('/', (req: Request, res: Response) => {
     res.status(200).json(countries);
 });
 
-router.get('/:countryParam', (req: Request, res: Response) => {
-    let countryParam: string = req.params.countryParam;
+router.get('/:country', (req: Request, res: Response) => {
+    let countryParam: string = req.params.country;
 
     for (let i = 0; i < countries.length; i++) {
         if (countries[i]['name'] == countryParam) {
