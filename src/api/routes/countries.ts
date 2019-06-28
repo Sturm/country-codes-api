@@ -3,9 +3,7 @@ import express, {Request, Response} from 'express';
 const router = express.Router();
 const countries = require('../data/countries.json');
 
-router.get('/', (req: Request, res: Response) => {
-    res.status(200).json(countries);
-});
+router.get('/', (req: Request, res: Response) => res.status(200).json(countries));
 
 router.get('/:country', (req: Request, res: Response) => {
     let countryParam: string = req.params.country;

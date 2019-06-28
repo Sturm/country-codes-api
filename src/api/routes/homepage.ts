@@ -1,8 +1,6 @@
 import express, {Request, Response} from 'express';
 const router = express.Router();
 
-router.get('/', (req: Request, res: Response) =>
-    res.render('homepage')
-);
+router.get('/', (req: Request, res: Response) => res.render('homepage'));
 
 module.exports = router;
