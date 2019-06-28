@@ -12,6 +12,9 @@ git clone https://github.com/Sturmpl/country-codes-api.git
 cd country-codes-api
 npm install
 
+# TypeScript installation:
+npm install -g typescript
+
 # Build files:
 tsc
 

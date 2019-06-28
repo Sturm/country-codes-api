@@ -22,5 +22,8 @@
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "utf-8": "^2.0.0"
+  },
+  "dependencies": {
+    "pug": "^2.0.4"
   }
 }
