@@ -1,4 +1,31 @@
-html
+html(lang='EN-GB')
     head
-    body
-        div Country Codes API
+        title Country Codes API
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+    body.my-5
+        div.container
+            div.row
+                div.col-lg-12
+                    h1.mb-4 Country Codes API
+                div.col-lg-12
+                    p
+                        b Get Country
+                    figure.bg-light.border.rounded-lg.m-0.mb-3
+                        pre.m-0.p-2
+                            code
+                            | GET /country/:countryName
+                            | GET /country/:countryCode
+                            | GET /country/:countryAlpha2
+                            | GET /country/:countryAlpha3
+                    p
+                        b Output example:
+                    figure.bg-light.border.rounded-lg.m-0
+                        pre.m-0.p-2
+                            code
+                            |{
+                            |    "name": "Germany",
+                            |    "prefix": "+49",
+                            |    "alpha-2": "DE",
+                            |    "alpha-3": "DEU",
+                            |    "code": "276"
+                            |}
