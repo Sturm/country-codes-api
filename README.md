@@ -1,10 +1,10 @@
 # Country Codes API
-API containing information about countries. This project is still in progress so be prepared for many issues.
+API containing information about countries. Mostly focused on call prefixes.
 
-**JSON with country codes is still incomplete!**
 ## Why this API?
 * This API is using ISO-3166-1 standard so information will be standarized and commonly accepted.
-* Country list is ordered by country prefix codes, so the list is perfect for html select tags.
+* Country list is ordered by country prefix codes, so the list is perfect for HTML `<select>` tag.
+
 ## How to build?
 ```
 # Install:
@@ -50,7 +50,6 @@ Output:
 ```
 
 ## TODO
-* Alpha-2 & 3 codes
 * Capitals
 * Advanced sorting
 * Include already prepared inputs
