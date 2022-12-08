@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Sturmpl/country-codes-api#readme",
   "devDependencies": {
     "@types/express": "^4.17.0",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "utf-8": "^2.0.0"
